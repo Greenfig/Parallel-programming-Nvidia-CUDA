@@ -1,0 +1,39 @@
+﻿Build started 16/12/2015 01:45:41.
+     1>Project "D:\ReneA-GDrive\Project\DPS915\A3_2\A3_2\A3_2.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c D:\ReneA-GDrive\Project\DPS915\A3_2\A3_2\main.cu 
+       CudaBuild:
+         Compiling CUDA source file main.cu...
+         cmd.exe /C "C:\Users\Rene\AppData\Local\Temp\tmpb98da7beef724b0ba5f2061fc326c9dd.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\main.cu.obj "D:\ReneA-GDrive\Project\DPS915\A3_2\A3_2\main.cu"
+         
+         D:\ReneA-GDrive\Project\DPS915\A3_2\A3_2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\main.cu.obj "D:\ReneA-GDrive\Project\DPS915\A3_2\A3_2\main.cu" 
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(171): warning : variable "h_a" was declared but never referenced
+     1>D:/ReneA-GDrive/Project/DPS915/A3_2/A3_2/main.cu(35): warning : variable "noCuda" was declared but never referenced
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(171): warning : variable "h_a" was declared but never referenced
+     1>D:/ReneA-GDrive/Project/DPS915/A3_2/A3_2/main.cu(35): warning : variable "noCuda" was declared but never referenced
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(171): warning : variable "h_a" was declared but never referenced
+     1>D:/ReneA-GDrive/Project/DPS915/A3_2/A3_2/main.cu(35): warning : variable "noCuda" was declared but never referenced
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(171): warning : variable "h_a" was declared but never referenced
+     1>D:/ReneA-GDrive/Project/DPS915/A3_2/A3_2/main.cu(35): warning : variable "noCuda" was declared but never referenced
+         main.cu
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(147): warning C4244: '=' : conversion from '__int64' to 'double', possible loss of data
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(166): warning C4244: 'initializing' : conversion from 'unsigned __int64' to 'int', possible loss of data
+     1>d:\renea-gdrive\project\dps915\a3_2\a3_2\BruteFactor.h(189): warning C4244: '=' : conversion from '__int64' to 'double', possible loss of data
+     1>D:/ReneA-GDrive/Project/DPS915/A3_2/A3_2/main.cu(35): warning C4101: 'noCuda' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\A3_2.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\A3_2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\A3_2.lib" /MACHINE:X86 Debug\main.cu.obj
+         A3_2.vcxproj -> D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\A3_2.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "D:\ReneA-GDrive\Project\DPS915\A3_2\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "D:\ReneA-GDrive\Project\DPS915\A3_2\A3_2\A3_2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:23.33
